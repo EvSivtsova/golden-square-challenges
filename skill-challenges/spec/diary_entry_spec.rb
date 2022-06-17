@@ -35,7 +35,7 @@ describe "@count_words" do
   end
 end
 
-describe "@reading_time method" do
+describe "@reading_time" do
   context "a wpm is above 0" do
     it "returns an integer representing reading time in minutes" do
       diary_entry = DiaryEntry.new("dog", "walk the dog " * 10)
@@ -56,7 +56,7 @@ describe "@reading_time method" do
   end
 end
 
-describe "reading_chunk method" do
+describe "@reading_chunk" do
   context "a wpm equals to 0" do
     it "fails" do
       diary_entry = DiaryEntry.new("dog", "walk the dog " * 15)
